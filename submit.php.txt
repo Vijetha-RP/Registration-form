@@ -1,0 +1,19 @@
+<?php
+// Uncomment the code below to use PHP for saving the form data
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Capture form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $address = $_POST['address'];
+
+    // Process form data (e.g., store in database or send email)
+    // For now, just display the received data
+    echo "<h1>Your Submitted Information:</h1>";
+    echo "<p>Name: $name</p>";
+    echo "<p>Email: $email</p>";
+    echo "<p>Phone: $phone</p>";
+    echo "<p>Address: $address</p>";
+}
+?>
